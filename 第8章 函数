@@ -1,0 +1,11 @@
+""" """文档字符串，用来描述函数是做什么的
+
+实参有：位置实参、关键字实参
+
+关键字实参：
+    调用格式：函数名(形参名=实参，形参名=实参)   无需在意实参的位置
+    def describe_pet(animal_type,pet_name):
+        .
+        .
+        .
+    describe_pets(animal_type = 'hamster',pet_name = 'harry')
