@@ -9,3 +9,41 @@
         .
         .
     describe_pets(animal_type = 'hamster',pet_name = 'harry')
+
+编写函数时，可给每个形参指定默认值。
+
+实参可以成为可选的，这样使用函数的人就只需要在有必要的情况下才提供额外的信息，比如姓名有2/3个字符串这样的例子
+实参编程可选的如何实现？答：给形参设定默认空字符，并放在形参列表的末尾
+
+PEP8:函数内的变量要小写
+
+禁止函数修改列表的话可以使用切片，实例：
+    function_name(list_name[:])    这样做就复制一个副本供函数去执行而不改变原来的列表内容
+
+如果事先不知道函数需要接受多少个实参，可以使用 *   例如：def make_pizza(*toppings)
+形参名*toppings中的星号让Python创建一个名为toppings的空元组，并且将收到的所有值都封装到这个元组中
+
+模块是一种独立文件 import，主要作用：在众多不同的程序中重用函数而不必重复在各个程序内复制函数
+函数可以做成一个函数库
+模块的扩展名为 .py 
+
+对模块的调用格式：模块名.函数名(参数)  module_name.function_name()
+
+import 文件名     这条代码将文件内的所有函数都复制到当前文件内
+
+从一个模块中还可以导入特定的函数，格式：from module_name import function_0, function_1
+由于这样调用显示地导入了函数的名称，所以调用函数时就无需使用句点
+
+可以给将从模块内调用的函数在自己的程序内重新取名字，这样做可以避免调用的函数与自己程序内的函数重名   
+格式：from module_name import function_name as fn
+
+还可以给模块指定别名  import module_name as mn
+
+*在Python中 “所有” 的意思
+from pizza import *    这样就可以将模块内所有函数导入到当前程序内，这样做的好处是不需要重复的“module_name.function_name()”
+
+
+
+
+
+
