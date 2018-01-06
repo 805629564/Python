@@ -17,3 +17,8 @@
         
         
 搞清楚概念：类、方法、实例、属性
+    类：class Dogs():
+    方法： def __init__(self, name, age)
+    实例：my_dog=Dogs('willie', 6)
+    属性：方法中的name、age 
+    
