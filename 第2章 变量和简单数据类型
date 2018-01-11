@@ -5,8 +5,3 @@ print("\tPython")
 \t  \n等转义字符在引号内使用，\t一个制表位
 
 在字符串中使用整数时，需要显式地指出 str(age)
-
-
-Problem List:
-1、""" """作用
-  
